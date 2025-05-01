@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #1d6363;
+  --color-secondary: #dcf1dc;
+  --color-accent: #cde8c9;
+  --color-dark: #172323;
+  --color-light: #a3a6ab;
+  --color-muted: #f9fbfa;
+  --color-white: #ffffff;
+}
+@layer base {
+  [data-theme="dark"] {
+    --color-primary: #a3a6ab; /* Dark mode primary color */
+    --color-secondary: #172323;
+    --color-accent: #1d6363;
+    --color-dark: #f9fbfa;
+    --color-light: #dcf1dc;
+    --color-muted: #cde8c9;
+    --color-white: #141414;
+  }
+}
+@layer component {
+  html {
+    @apply bg-white;
+  }
+  section {
+    @apply mb-16;
+  }
+  .btn-primary {
+    @apply bg-primary text-white rounded-lg px-6 py-2 text-sm cursor-pointer;
+  }
+  .btn-secondary {
+    @apply bg-white font-medium text-primary text-sm border border-primary rounded-lg px-6 py-2 cursor-pointer;
+  }
+  .btn-tertiary {
+    @apply bg-accent text-primary text-sm rounded-lg px-6 py-2 font-semibold cursor-pointer;
+  }
+  .title {
+    @apply text-sm text-primary font-semibold uppercase bg-secondary rounded-md px-4 w-fit py-1;
+  }
+  .icon {
+    @apply text-primary text-lg rounded-full bg-secondary p-1;
+  }
+  .subtitle {
+    @apply text-light text-sm;
+  }
+}
