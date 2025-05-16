@@ -1,5 +1,3 @@
-import React from "react";
-
 const Footer = () => {
   return (
     <footer className="bg-primary lg:h-[500px] pt-16 lg:pt-20 px-4 lg:px-20">
