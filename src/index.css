@@ -8,21 +8,23 @@
   --color-light: #a3a6ab;
   --color-muted: #f9fbfa;
   --color-white: #ffffff;
+  --color-back: #fffff;
 }
 @layer base {
   [data-theme="dark"] {
-    --color-primary: #a3a6ab; /* Dark mode primary color */
-    --color-secondary: #172323;
-    --color-accent: #1d6363;
+    --color-primary: #1d6363; /* Dark mode primary color */
+    --color-secondary: #bbebb3;
+    --color-accent: #b8ecb0;
     --color-dark: #f9fbfa;
-    --color-light: #dcf1dc;
+    --color-light: #888888;
     --color-muted: #cde8c9;
-    --color-white: #141414;
+    --color-white: #ffffff;
+    --color-back: #000000;
   }
 }
 @layer component {
   html {
-    @apply bg-white;
+    @apply bg-back;
   }
   section {
     @apply mb-16;

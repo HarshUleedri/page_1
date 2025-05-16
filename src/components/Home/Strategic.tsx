@@ -32,7 +32,7 @@ const Strategic = () => {
     <section className="bg-accent/20 px-4 lg:p-16 py-12 rounded-2xl lg:flex lg:justify-between lg:gap-24 ">
       <div className="mb-16 lg:mb-0 lg:flex flex-col justify-between lg:w-96 ">
         <div className="mb-12 lg:mb-0">
-          <h2 className="text-4xl font-semibold leading-10 mb-4">
+          <h2 className="text-4xl font-semibold text-dark leading-10 mb-4">
             We are a <br /> strategic choice
           </h2>
           <p className="text-light font-semibold mb-4 ">
